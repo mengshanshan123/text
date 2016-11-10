@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#fff;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float-left;background:url(images/tree.png) 0 0 no-repeat;margin:10px;}
+.title span:nth-child(3){width:50px;height:50px;float:right;background:url(images/user8.jpg) 0 0 no-repeat;margin:10px;}
+.con{width:630px;padding:10px 0px 10px 10px;overflow:hidden;}
+.out{position:relative;width:640px;height:332px;overflow:hidden;}
+.list{position:absolute;bottom:15px;right:20px;}
+.list li{list-style:none;width:10px;height:10px;border-radius:50%;float:left;margin-left:10px;background:#fff;}
+.list li:nth-child(1){animation:red1 8s linear  infinite;}
+.list li:nth-child(2){animation:red2 8s linear  infinite;}
+.list li:nth-child(3){animation:red3 8s linear  infinite;}
+.list li:nth-child(4){animation:red4 8s linear  infinite;}
+.cen{width:3500px;position:absolute;animation:move1 8s linear 0.1s infinite;}
+.cen img{float:left;width:640px;height:332px;}
+@keyframes move1{
+    0%{left:0px;}
+    15%{left:0px;}
+    20%{left:-640px;} 
+    35%{left:-640px;} 
+    40%{left:-1280px;}
+    55%{left:-1280px;}
+    60%{left:-1920px;} 
+    75%{left:-1920px;} 
+    80%{left:-2560px;}
+    100%{left:-2560px;}
+}
+@keyframes red1{
+    0%{background:red;}
+    25%{background:red;}
+    26%{background:#fff;}
+    50%{background:#fff;}
+    75%{background:#fff;}
+    100%{background:#fff;}
+}
+@keyframes red2{
+    0%{background:#fff;}
+    25%{background:#fff;}
+    26%{background:red;}
+    50%{background:red;}
+    51%{background:#fff;}
+    75%{background:#fff;}
+    100%{background:#fff;}
+}
+@keyframes red3{
+    0%{background:#fff;}
+    25%{background:#fff;}
+    50%{background:#fff;}
+    51%{background:red;}
+    75%{background:red;}
+    76%{background:#fff;}
+    100%{background:#fff;}
+}
+@keyframes red4{
+    0%{background:#fff;}
+    25%{background:#fff;}
+    50%{background:#fff;}
+    75%{background:#fff;}
+    76%{background:red;}
+    100%{background:red;}
+}
+.banner{overflow:hidden;}
+.banner span{width:300px;height:110px;color:#fff;line-height:110px;text-align:center;font-size:18px;float:left;margin:0px 15px 10px 0px;transition:all 1s linear 0.1s;}
+.banner span:hover{font-size:27px;}
+.banner span:nth-child(1){text-align:center;line-height:300px;height:230px;background:#7DCC00 url(images/new8.png) 107px 40px no-repeat;}
+.banner span:nth-child(2){background:#00cabe url(images/eduction8.png) 10px 10px no-repeat;}
+.banner span:nth-child(3){background:#E89E1B url(images/peng8.png) 10px 10px no-repeat;}
+.banner span:nth-child(4){background:#3F95EA url(images/mark8.png) 10px 10px no-repeat;}
+.banner span:nth-child(5){background:#51DB61 url(images/ba8.png) 10px 10px no-repeat;}
+.new{color:#9A9A9A;font-size:30px;padding-left:40px;background:url(images/video.png) 6px 0 no-repeat;line-height:30px;margin-top:25px;padding-bottom:20px;border-bottom:1px solid #dedede;background-size:28px 28px; animation:bigger 0.5s linear 0.1s infinite;}
+@keyframes bigger{
+    0%{background-size:28px 28px;}
+    100%{background-size:35px 35px;}
+}
+.demo{padding:15px 10px;background:#fff;overflow:hidden;margin-bottom:2px;border-bottom:1px solid #dedede;}
+.demo img{width:170px;height:117px;float:left;margin-bottom:10px;}
+.right{float:left;margin-left:10px;width:400px;}
+.right h2{color:#333;font-weight:600;display:inline;margin:0px 0px 10px 0px;}
+.right p{color:#A5A5A5;line-height:27px;height:40px;margin-bottom:20px;}
+.zan{overflow:hidden;}
+.zan span{color:#bbbbbb;font-size:12px;padding-left:30px;}
+.zan span:hover{background-size:25px 25px;}
+.zan span:nth-child(2){background:url(images/zan4.png) 11px 4px no-repeat;float:right;margin-right:10px;}
+.zan span:nth-child(1){background:url(images/pl4.jpg) 10px 3px no-repeat;float:right;}
+.demo:hover{background:#f9f7f7;}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+		<span></span>
+		<span>叽喳校园</span>
+        <span></span>
+	</div>
+    <div class="out">
+         <div class="cen">
+             <img src="images/2014.jpg" alt="">
+             <img src="images/smile8.jpg" alt=""> 
+             <img src="images/2014.jpg" alt=""> 
+             <img src="images/smile8.jpg" alt="">
+             <img src="images/2014.jpg" alt=""> 
+         </div>
+         <ul class="list">
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>     
+    </div>
+	<div class="con">
+       <div class="banner">
+           <span>校园新闻</span>
+           <span>教育培训</span>
+           <span>微圈子</span>
+           <span>跳蚤市场</span>
+           <span>兼职吧</span>
+       </div>
+       <h2 class="new">最新兼职</h2>
+       <div class="demo">
+           <img src="images/run1.png" alt="">
+           <div class="right">
+               <h2>奔跑吧青年</h2>
+               <p>当你还在纠结要不要做设计，当你还在苦恼为什么自己 怀才不遇，当你还不曾思考我该做什么</p>
+                <div class="zan">
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+       </div>
+       <div class="demo">
+           <img src="images/run1.png" alt="">
+           <div class="right">
+               <h2>奔跑吧青年</h2>
+               <p>当你还在纠结要不要做设计，当你还在苦恼为什么自己 怀才不遇，当你还不曾思考我该做什么</p>
+                <div class="zan">
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+       </div>
+       <div class="demo">
+           <img src="images/run1.png" alt="">
+           <div class="right">
+               <h2>奔跑吧青年</h2>
+               <p>当你还在纠结要不要做设计，当你还在苦恼为什么自己 怀才不遇，当你还不曾思考我该做什么</p>
+                <div class="zan">
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+       </div>
+	</div>	
+</div>
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+
+</script>	
+</html>

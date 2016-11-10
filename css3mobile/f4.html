@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#f6f6f6;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/drap.png) 0 0 no-repeat;margin:10px;}
+.search{width:640px;padding:15px 0px;font-size:24px;position:relative;}
+.search input{color:#bababa;width:569px;height:50px;line-height:50px;outline-style:none;margin-left:10px;padding-left:50px;border:0px;box-shadow:0 0 3px 3px rgba(69,69,69,0.1);border-radius:5px;}
+.search img{position:absolute;top:25px;left:25px;}
+.con{width:630px;padding:10px 0px 0px 10px;}
+.demo{padding:15px 10px;background:#fff;overflow:hidden;margin-bottom:2px;}
+.demo img{width:170px;height:117px;float:left;margin-bottom:10px;}
+.right{float:left;margin-left:10px;width:400px;}
+.right h2{color:#7545454;font-weight:600;display:inline-block;font-size:30px;}
+.price{color:#ff6600;font-size:12px;margin:10px 0px 25px;}
+.zan{overflow:hidden;}
+.zan span{color:#bbbbbb;font-size:12px;padding-left:30px;}
+.zan span:hover{background-size:25px 25px;}
+.zan span:nth-child(1){background:url(images/clock4.jpg) 0 6px no-repeat;float:left;}
+.zan span:nth-child(3){background:url(images/zan4.png) 11px 4px no-repeat;float:right;margin-right:10px;}
+.zan span:nth-child(2){background:url(images/pl4.jpg) 10px 3px no-repeat;float:right;}
+.demo:hover{background:#f9f7f7;}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+		<span></span>
+		<span>教育培训</span>
+	</div>
+    <div class="search">
+     <input type="text" value="Search">
+     <img src="images/search4.jpg" alt="">      
+    </div>
+	<div class="con">
+		<div class="demo">
+            <img src="images/run1.png" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <div class="price">
+                ￥299
+                </div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/run1.png" alt="">
+            <div class="right">
+                <h2>四大高薪行业晋级班</h2>
+                <div class="price">
+                ￥2000
+                </div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/run1.png" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <div class="price">
+                ￥299
+                </div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/run1.png" alt="">
+            <div class="right">
+                <h2>四大高薪行业晋级班</h2>
+                <div class="price">
+                ￥2000
+                </div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/run1.png" alt="">
+            <div class="right">
+                <h2>四大高薪行业晋级班</h2>
+                <div class="price">
+                ￥2000
+                </div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+            </div>
+        </div>
+        <div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>四大高薪行业晋级班</h2>
+    			<div class="price">
+                ￥2000
+    			</div>
+                <div class="zan">
+                    <span>共计6课时</span>
+                    <span>105</span>
+                    <span>105</span>
+                </div>
+    		</div>
+    	</div>
+	</div>	
+</div>
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+
+</script>	
+</html>

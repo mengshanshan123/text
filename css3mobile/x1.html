@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>last1</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+*{margin:0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;height:1100px;background:#4C93EB;}
+.touxiang {margin:110px 242px;width:155px;height:150px;}
+.con{width:463px;padding:10px 87px;}
+.con input{width:375px;height:80px;line-height:80px;color:#fff;font-size:30px;outline:none;border-color:transparent;}
+.con input:nth-child(1){padding-left:75px;background:#79AEF0 url(images/tet1.png) 10px 25px no-repeat;}
+.con input:nth-child(2){padding-left:75px;background:#79AEF0 url(images/suo1.png) 10px 25px no-repeat;}
+.con input:nth-child(3){margin-top:65px;background:#F3B045;width:455px;}
+.bottom{width:455px;overflow:hidden;margin-left:86px;margin-top:10px;}
+.bottom span{font-size:24px;color:#c4d8f7;}
+.bottom span:nth-child(1){float:left;}
+.bottom span:nth-child(2){float:right;}
+p{text-align:center;font-size:24px;color:#c4d8f7;margin-top:80px;}
+</style>
+<body>
+<div class="wrap">
+		<img class="touxiang" src="images/tou9.png" alt="">
+	<div class="con">
+		<input type="text" value="E-mail address" name="" required>
+		<input type="text" value="......" name=""required>
+		<input type="submit" value="login" name="login">
+	</div>
+	<div class="bottom">
+		<span>忘记密码</span>
+		<span>注册账号</span>
+	</div>
+	<p>————————社交账号一键登录————————</p>
+</div>	
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+</script>	
+</html>

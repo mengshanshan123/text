@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap1{width:580px;background:#F1F1F1;height:1136px;}
+.title1{width:580px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title1 span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title1 span:nth-child(1){width:50px;height:50px;float:left;background:url(images/drap.png) 0 0 no-repeat;margin:10px;}
+.title1 span:nth-child(3){width:50px;height:50px;float:right;background:url(images/user8.jpg) 0 0 no-repeat;margin:10px;}
+.con1{width:580px;overflow:hidden;}
+.head{background:radial-gradient(right bottom ,ellipse cover , rgb(227, 201, 123) , rgb(218, 189, 141) 14% , rgb(126, 118, 220) 95% , rgb(77, 163, 225) 99%);
+background: -o-radial-gradient(right bottom , ellipse cover , rgb(227, 201, 123) , rgb(218, 189, 141) 14% , rgb(126, 118, 220) 95% , rgb(77, 163, 225) 99%);
+background: -ms-radial-gradient(right bottom , ellipse cover , rgb(227, 201, 123) , rgb(218, 189, 141) 14% , rgb(126, 118, 220) 95% , rgb(77, 163, 225) 99%);
+background: -moz-radial-gradient(right bottom , ellipse cover , rgb(227, 201, 123) , rgb(218, 189, 141) 14% , rgb(126, 118, 220) 95% , rgb(77, 163, 225) 99%);
+background: -webkit-radial-gradient(right bottom , ellipse cover , rgb(227, 201, 123) , rgb(218, 189, 141) 14% , rgb(126, 118, 220) 95% , rgb(77, 163, 225) 99%);
+) ;overflow:hidden;}
+.head img{float:left;width:150px;height:150px;margin:25px 20px;}
+.head span{float:left;color:#fff;font-size:30px;line-height:200px;}
+.band img{width:50px;height:50px;margin:3px;} 
+.band a{width:60px;height:60px;background:#7DCC00;border-radius:4px;float:left;margin:5px 10px;}
+.band li{height:60px;padding:25px;border-bottom:1px solid #ededed;color:#404040;font-size:30px;line-height:64px;background:#fff;list-style: none;}
+.band li span{background:url(images/drap1.jpg) 0 0 no-repeat;float:right;width: 30px;height:40px;margin-top:5px;}
+.band li:nth-child(1){margin-top:15px;}
+.band li:nth-child(6){margin-top:20px;}
+</style>
+<body>
+<div class="wrap1">
+	<div class="title">
+		<span></span>
+		<span></span>
+    <span></span>
+	</div>
+<div class="con">
+  <div class="head">
+     <img src="images/tou9.png" alt=""> 
+     <span>请登录</span>
+  </div>
+  <div class="ban">
+     <ul class="band">
+       <li><a href="#"><img src="images/new8.png" alt=""></a>校园新闻<span></span></li>
+       <li><a href=""><img src="images/eduction8.png" alt=""></a>教育培训<span></span></li>
+       <li><a href=""><img src="images/peng8.png" alt=""></a>微圈子<span></span></li>
+       <li><a href=""><img src="images/mark8.png" alt=""></a>跳蚤市场<span></span></li>
+       <li><a href=""><img src="images/ba8.png" alt=""></a>兼职吧<span></span></li>
+       <li><a href=""><img src="images/peng8.png" alt=""></a>个人中心<span></span></li>
+     </ul>
+  </div>
+</div>
+</div>
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+
+</script>	
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f7</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#f6f6f6;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/drap.png) 0 0 no-repeat;margin:10px;}
+.con{width:620px;padding:10px;}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+	<span id="back"></span>
+	<span>列表</span>
+	<span id="denglu"></span>
+    </div>	
+    <div class="con">
+    	<h2>校园青年奔跑吧</h2>
+    </div>
+</div>
+
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+</script>
+</body>
+</html>

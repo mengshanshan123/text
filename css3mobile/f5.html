@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#fff;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/tree.png) 0 0 no-repeat;margin:10px;}
+.title span:nth-child(3){width:50px;height:50px;float:right;background:url(images/search.png) 0 0 no-repeat;margin:10px;}
+.con{width:640px;}
+.demo{width:296px;background:#fff;overflow:hidden;margin-bottom:2px;float:left;border:1px solid #DEDEDE;padding-bottom:10px;margin:10px;}
+.demo img{width:297px;height:179px;float:left;margin-bottom:10px;}
+.right{float:left;margin-left:10px;}
+.right h2{color:#7a7a7a;font-weight:600;margin:0px 0px 10px 0px;}
+.price{color:#ffaa87;font-size:12px;margin:10px 0px 25px;}
+.demo:hover{background:#f9f7f7;}
+h1{padding-left:40px;background:url(images/huo5.png) 10px 5px no-repeat;color:#999;margin:20px 10px;animation:huo 0.5s ease 0.1s reverse infinite}
+.total{font-size:12px;float:right;margin-right:5px;color:#999;}
+@keyframes huo{
+    0%{transform:translateX(0px)scale(1)}
+    100%{transform:translateX(15px)scale(1.1)}
+}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+		<span></span>
+		<span>教育培训</span>
+        <span></span>
+	</div>
+    <img src="images/2014.jpg" alt="">
+    <h1>热门课程</h1>
+	<div class="con">
+        <div class="demo">
+            <img src="images/p5.jpg" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <span class="price">
+                ￥2000
+                </span>
+                <span class="total">共计5课时</span>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/p5.jpg" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <span class="price">
+                ￥2000
+                </span>
+                <span class="total">共计5课时</span>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="images/p5.jpg" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <span class="price">
+                ￥2000
+                </span>
+                <span class="total">共计5课时</span>
+            </div>
+        </div>
+		<div class="demo">
+            <img src="images/p5.jpg" alt="">
+            <div class="right">
+                <h2>托福TPO 新东方老师细讲</h2>
+                <span class="price">
+                ￥2000
+                </span>
+                <span class="total">共计5课时</span>
+            </div>
+        </div>
+	</div>	
+</div>
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+
+</script>	
+</html>

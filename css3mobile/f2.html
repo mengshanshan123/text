@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#fff;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/tree.png) 0 0 no-repeat;margin:10px;}
+.title span:nth-child(3){width:50px;height:50px;float:right;background:url(images/search.png) 0 0 no-repeat;margin:10px;}
+.con{width:620px;padding:10px;}
+.guid{overflow:hidden;}	
+.guid li{list-style:none;float:left;width:85px;margin:35px 35px 0px 28px;}
+.guid li:hover span{transform:scale(1.2);}
+.guid span{float:left;margin-left:10px;width:72px;height:72px;border-radius:50%;padding:5px;background-size:58px 58px;transition:all 0.3s linear;}
+.guid li:nth-child(1) span{background:#F1C73F url(images/b1.png) 10px 10px no-repeat;}
+.guid li:nth-child(2) span{background:#47ADDD url(images/b2.png) 10px 10px no-repeat;}
+.guid li:nth-child(3) span{background:#DF3059 url(images/b3.png) 10px 10px no-repeat;}
+.guid li:nth-child(4) span{background:#5DC856 url(images/b4.png) 10px 10px no-repeat;}
+.guid li:nth-child(5) span{background:#547DF9 url(images/b5.png) 10px 10px no-repeat;}
+.guid li:nth-child(6) span{background:#FF8A80 url(images/b6.png) 10px 10px no-repeat;}
+.guid li:nth-child(7) span{background:#EA5C38 url(images/b7.png) 10px 10px no-repeat;}
+.guid li:nth-child(8) span{background:#FB9F4A url(images/b8.png) 10px 10px no-repeat;}
+.guid a{float:left;text-decoration:none;font-size:24px;color:#414141;font-weight:blod;width:104px;text-align:center;line-height:30px;}
+.new{color:#9A9A9A;font-size:30px;padding-left:40px;background:url(images/video.png) 6px 0 no-repeat;line-height:30px;margin-top:50px;padding-bottom:20px;border-bottom:1px solid #dedede;background-size:28px 28px; animation:bigger 0.5s linear 0.1s infinite;}
+.demo{padding:15px 5px;background:#fff;border-bottom:1px solid #dedede;overflow:hidden;}
+.demo img{width:170px;height:117px;float:left;}
+.right{float:left;margin-left:10px;width:430px;margin-top:10px;}
+.right h2{color:#545454;display:inline-block;font-size:30px;}
+.price{float:right;color:#ff6600;font-size:12px;}
+.price span{color:#9a9a9a;}
+.right p{font-size:12px;color:#9a9a9a;padding-left:20px;line-height:24px;margin-bottom:10px;}
+.right p:nth-of-type(1){background:url(images/clock.png) 0 0 no-repeat;margin-top:10px;}
+.right p:nth-of-type(2){background:url(images/position.png) 0 0 no-repeat;}
+.demo:hover{background:#f9f7f7;}
+@keyframes bigger{
+	0%{background-size:28px 28px;}
+	100%{background-size:35px 35px;}
+}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+		<span></span>
+		<span>兼职</span>
+		<span id="search"></span>
+	</div>		
+	<div class="con">
+      <ul class="guid">
+      	<li><span></span><a href="#">家教</a></li>
+      	<li><span></span><a href="#">促销</a></li>
+      	<li><span></span><a href="#">演艺</a></li>
+      	<li><span></span><a href="#">礼仪模特</a></li>
+      	<li><span></span><a href="#">翻译</a></li>
+      	<li><span></span><a href="#">传单</a></li>
+      	<li><span></span><a href="#">网络</a></li>
+      	<li><span></span><a href="#">其他</a></li>
+      </ul>
+      <h2 class="new">最新兼职</h2>
+      <div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>服务员专场面试会</h2>
+    			<div class="price">￥200
+    			    <span>/天</span>
+    			</div>
+    			<p>面试时间10月8日10:00-16:00</p>
+    			<p>面试地点石景山总工会2层博看文思</p>
+
+    		</div>
+    	</div>
+    	<div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>服务员专场面试会</h2>
+    			<div class="price">￥200
+    			    <span>/天</span>
+    			</div>
+    			<p>面试时间10月8日10:00-16:00</p>
+    			<p>面试地点石景山总工会2层博看文思</p>
+
+    		</div>
+    	</div>
+    	<div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>服务员专场面试会</h2>
+    			<div class="price">￥200
+    			    <span>/天</span>
+    			</div>
+    			<p>面试时间10月8日10:00-16:00</p>
+    			<p>面试地点石景山总工会2层博看文思</p>
+
+    		</div>
+    	</div>
+    	<div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>服务员专场面试会</h2>
+    			<div class="price">￥200
+    			    <span>/天</span>
+    			</div>
+    			<p>面试时间10月8日10:00-16:00</p>
+    			<p>面试地点石景山总工会2层博看文思</p>
+
+    		</div>
+    	</div>
+    	<div class="demo">
+    		<img src="images/run1.png" alt="">
+    		<div class="right">
+    			<h2>服务员专场面试会</h2>
+    			<div class="price">￥200
+    			    <span>/天</span>
+    			</div>
+    			<p>面试时间10月8日10:00-16:00</p>
+    			<p>面试地点石景山总工会2层博看文思</p>
+
+    		</div>
+    	</div>
+	</div>
+</div>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+var search=document.getElementById('search');
+search.onclick=function(){
+    
+}
+
+
+</script>
+</body>	
+</html>

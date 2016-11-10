@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>newsfirst</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="swiper.min.css">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#f6f6f6;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/drap.png) 0 0 no-repeat;margin:10px;}
+.title span:nth-child(3){width:50px;height:50px;float:right;background:url(images/user8.jpg) 0 0 no-repeat;margin:10px;}
+#title{overflow:hidden;}
+#title li{list-style:none;float:left;width:128px;height:55px;line-height:55px;font-size:24px;color:#727272;text-align:center;background:#fff;border-bottom:3px solid transparent;}
+#title .show{border-color:#aecbee;color:#aecbee;}
+#page1 .swiper-slide img{width:640px;height:333px;}
+#swiper-container1{width:640px;}
+#swiper-container2{width:640px;height:303px;}
+.swiper-pagination {
+  position:absolute;
+  z-index:20;
+  top:270px;
+  width:100%;
+  text-align:right;
+}
+#pai{
+    height:50px;
+    line-height:50px;
+	font-size:30px;
+	line-height:50px;
+	color:#fff;
+	position:absolute;
+	top:255px;
+    padding:0px 10px;
+    width:620px;
+	z-index: 100;
+	 background:rgba(0,0,0,0.5);
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background: #555;
+}
+.demo{padding:15px 10px;background:#fff;overflow:hidden;margin-bottom:2px;}
+.demo img{width:170px;height:117px;float:left;margin-bottom:10px;}
+.right{float:left;margin-left:10px;width:430px;}
+.right h2{color:#666;font-weight:600;}
+.price{color:#7a7a7a;font-size:12px;margin:10px 0px 10px;height:37px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.zan{overflow:hidden;}
+.zan span{color:#bbbbbb;font-size:12px;padding-left:30px;}
+.zan span:hover{background-size:25px 25px;}
+.zan span:nth-child(1){float:left;padding-left:0px;}
+.zan span:nth-child(3){background:url(images/zan4.png) 11px 7px no-repeat;float:right;margin-right:10px;}
+.zan span:nth-child(2){background:url(images/pl4.jpg) 10px 7px no-repeat;float:right;}
+.demo:hover{background:#f9f7f7;}
+.con{width:630px;padding:10px 0px 0px 10px;}
+</style>
+<body>
+<div class="wrap">
+	<div class="title">
+	<span></span>
+	<span>校园新闻</span>
+	<span></span>
+    </div>	
+    <ul id="title">
+    	<li id="btn1" class="show">头条</li>
+    	<li id="btn2">娱乐</li>
+    	<li id="btn3">学习</li>
+    	<li id="btn4">交友</li>
+    	<li id="btn5">活动</li>
+    </ul>
+    <div class="swiper-container" id="swiper-container1">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" id="page1">
+             <!-- 第一页的图片滚动 -->
+            <div class="swiper-container" id="swiper-container2">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="images/2014.jpg" alt=""></div>
+				    <div class="swiper-slide"><img src="images/smile8.jpg" alt=""></div>
+				    <div class="swiper-slide"><img src="images/news.jpg" alt=""></div>
+				</div>
+				<div id="pai">杂志实拍校园</div>
+			</div>
+			   <div class="swiper-pagination"></div>
+             <!-- 结束了 -->
+            <div class="con">
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            </div>
+		</div>
+		<div class="swiper-slide " id="page2">
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+            <div class="demo">
+	            <img src="images/run1.png" alt="">
+	            <div class="right">
+	                <h2>奔跑吧青年</h2>
+	                <div class="price">
+	                当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么......
+	                </div>
+	                <div class="zan">
+	                    <span>5小时前</span>
+	                    <span>105</span>
+	                    <span>105</span>
+	                </div>
+	            </div>
+            </div>
+        </div>
+		<div class="swiper-slide " id="page3">
+			slider3</div>
+		<div class="swiper-slide " id="page4">
+			slider4</div>
+		<div class="swiper-slide " id="page5">
+			slider5</div>
+	</div>
+</div>
+
+</div>
+	
+</body>
+<script src="swiper.min.js"></script>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="swiper-3.3.1.jquery.min.js"></script>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+var title=document.getElementById('title');
+var lis=title.getElementsByTagName('li');
+/*var page1=document.getElementById('page1');
+var page2=document.getElementById('page2');
+var page3=document.getElementById('page3');
+var page4=document.getElementById('page4');
+var page5=document.getElementById('page5');*/
+var mySwiper1 = new Swiper('#swiper-container2',{
+	direction:'horizontal',
+	pagination:'.swiper-pagination',
+	paginationClickable :true,
+	paginationHide :true,
+	autoplay : 1000,
+})
+var mySwiper = new Swiper('#swiper-container1',{
+
+})
+$('#btn1').click(function(){
+mySwiper.slideTo(0, 1000, false);
+$(this).attr('class','show').siblings().attr('class','');
+})
+$('#btn2').click(function(){
+mySwiper.slideTo(1, 1000, false);
+$(this).attr('class','show').siblings().attr('class','');
+})
+$('#btn3').click(function(){
+mySwiper.slideTo(2, 1000, false);
+$(this).attr('class','show').siblings().attr('class','');
+})
+$('#btn4').click(function(){
+mySwiper.slideTo(3, 1000, false);
+$(this).attr('class','show').siblings().attr('class','');
+})
+$('#btn5').click(function(){
+mySwiper.slideTo(4, 1000, false);
+$(this).attr('class','show').siblings().attr('class','');
+})
+
+</script>
+</html>

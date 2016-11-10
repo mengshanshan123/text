@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>f2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+*{margin: 0px;padding:0px;font-family:"微软雅黑";}
+.wrap{width:640px;background:#F1F1F1;height:1136px;}
+.title{width:640px;height:50px;text-align:center;background:#4c93eb;line-height:50px;padding:15px 0px;overflow:hidden;}
+.title span{font-size:34px;color:#fff;font-weight:400;text-shadow:0 0 3px rgba(76,147,235,1)}
+.title span:nth-child(1){width:50px;height:50px;float:left;background:url(images/drap.png) 0 0 no-repeat;margin:10px;}
+.title span:nth-child(3){width:50px;height:50px;float:right;background:url(images/search.png) 0 0 no-repeat;margin:10px;}
+#con{width:600px;overflow:hidden;padding:40px 20px;height:1000px;background:#fff;}
+.bottom{position:fixed;width:600px;padding:20px;background:#F5F5F5;bottom:0px;z-index:2;left:0px;}
+#ipt{padding-left:80px;line-height:45px;background:#fff url(images/talk1.png) 22px 0 no-repeat;color:#E5E5E5;font-size:12px;border-color:transparent;border-radius:45px;outline:none;width:320px;float:left;margin-top:5px;}
+#smile{width:55px;height:65px;background:url(images/smile.png) 0 0 no-repeat;float:left;margin:-6px 30px 0px;}
+#addpicture{width:55px;height:65px;background:url(images/add.png) 0 -5px no-repeat;float:left;}
+.talk{overflow:hidden;margin-bottom:20px;}
+.talk a{width:75px;height:75px;background:url(images/talk4.jpg) 0 0 no-repeat;float:left;}
+.talk span{padding:15px;background:#F7F7F5;float:left;max-width:370px;border:1px solid #E1E1E1;border-radius:4px;}
+.talk em{width:15px;height:15px;border-right:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;background:#F7F7F5;transform:rotate(135deg);float: left;margin-left:17px;margin-top:20px;position:relative;left:8px; }
+.talkr{overflow:hidden;margin-bottom:20px;}
+.talkr a{width:75px;height:75px;background:url(images/talk4.jpg) 0 0 no-repeat;float:right;}
+.talkr span{padding:15px;background:#F7F7F5;float:right;max-width:370px;border:1px solid #E1E1E1;border-radius:4px;}
+.talkr em{transform:rotate(135deg);width:15px;height:15px;float:right;margin-right:17px;margin-top:13px;position:relative;left:-7px;border-left:1px solid #E1E1E1;border-top:1px solid #E1E1E1;background:#F7F7F5;}
+</style>
+<body>
+<div class="wrap">
+  <div class="title">
+  		<span></span>
+  		<span>微圈子</span>
+      <span></span>
+  </div>
+  <div id="con">
+  <div class="talk">
+  <a href="#" ></a>
+  <em></em>
+  <span>这里好热闹哇哇</span>
+</div>
+  <div class="talk">
+  <a href="#" ></a>
+  <em></em>
+  <span>这里好热闹哇哇</span>
+  </div>    
+  <div class="talkr">
+  <a href="#" ></a>
+  <em></em>
+  <span>这里好热闹哇哇这里好热闹哇哇这里好热闹哇哇这里好热闹哇哇</span>
+  </div>
+  </div>
+    <div class="bottom">
+      <input id="ipt" type="text" value="快来吐槽，小伙伴行动起来" name="">
+      <div id="smile"></div>
+      <div id="addpicture"></div>
+    </div>
+</div>
+</body>
+<script>
+function resetZoom(){
+	var deviceWidth=document.documentElement.clientWidth;//获取设备宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+resetZoom();
+window.onresize=function (){
+	resetZoom();
+}
+var ipt=document.getElementById('ipt');
+var con=document.getElementById('con');
+var smile=document.getElementById('smile');
+var addpicture=document.getElementById('addpicture');
+ipt.onchange=function(){
+  document.onkeydown=function(e){
+    if(e.keyCode==13){
+    var divs=document.createElement('div');
+    divs.setAttribute('class','talkr');
+    divs.innerHTML='<a href="#" ></a><em></em><span>'+ipt.value+'</span>';
+    console.log(divs)
+    con.appendChild(divs);
+  // con.innerHTML+='<div class="talkr"><a href="#" ></a><em></em><span>'+ipt.value+'</span></div>';
+  };
+  }
+}
+</script>	
+</html>
